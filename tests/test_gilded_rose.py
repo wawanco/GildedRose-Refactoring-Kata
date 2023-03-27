@@ -9,4 +9,4 @@ class TestGildedRose:
         items = [Item("foo", 0, 0)]
         gilded_rose = GildedRose(items)
         gilded_rose.update_quality()
-        assert "foo" == items[0].name
+        assert items[0].name == "foo"
