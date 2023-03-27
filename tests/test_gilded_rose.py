@@ -9,4 +9,7 @@ class TestGildedRose:
         items = [Item("foo", 0, 0)]
         gilded_rose = GildedRose(items)
         gilded_rose.update_quality()
+        assert len(items) == 1
         assert items[0].name == "foo"
+        assert items[0].sell_in == -1
+        assert items[0].quality == 0
