@@ -5,3 +5,10 @@ obj
 vendor
 .idea
 *.iml
+
+# Python
+*.pyc
+.cache
+.coverage
+.idea/
+*.venv
