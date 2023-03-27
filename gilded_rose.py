@@ -9,8 +9,10 @@ class GildedRose(object):
         for item in self.items:
             self.do_stuff(item)
 
-    @staticmethod
-    def do_stuff(item):
+    def do_stuff(self, item):
+        self.do_stuff_2(item)
+
+    def do_stuff_2(self, item):
         if item.name != "Aged Brie" and item.name != "Backstage passes to a TAFKAL80ETC concert":
             if item.quality > 0:
                 if item.name != "Sulfuras, Hand of Ragnaros":
